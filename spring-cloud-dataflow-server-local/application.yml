@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/scdf
+    username: scdf
+    password: scdf
+    driver-class-name: org.postgresql.Driver
+
+  cloud:
+    dataflow.features.application-groups-enabled: true

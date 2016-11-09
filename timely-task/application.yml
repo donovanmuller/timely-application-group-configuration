@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/scdf
+    username: scdf
+    password: scdf
+    driver-class-name: org.postgresql.Driver
+
+  cloud.stream.bindings:
+    job-execution-events.destination: timely-events
+    step-execution-events.destination: timely-events
+# the events emitted on these channels are a little verbose, uncomment if you're feeling lonley
+#    item-read-events.destination: timely-events
+#    item-process-events.destination: timely-events
+#    item-write-events.destination: timely-events
